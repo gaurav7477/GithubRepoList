@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts end -->
+    <script
+      src="https://kit.fontawesome.com/d5afc6b688.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fyle Assignment</title>
+  </head>
+  <body>
+    <div id="loader" class="loader"></div>
+
+    <div class="main">
+      <!-- Inside your existing HTML code, add the following section for search input and submit button -->
+      <div class="searchToggles">
+        <h2>GitViewer</h2>
+        <div class="searchContainer">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search GitHub user"
+          />
+          <button id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            User
+          </button>
+        </div>
+        <div class="reposearchContainer">
+          <input
+            type="text"
+            id="searchRepoInput"
+            placeholder="Search repository"
+          />
+          <button id="searchRepoButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Repo
+          </button>
+        </div>
+        <button id="searchToggle">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="profile">
+        <div class="profileInfo">
+          <div class="profileImg" id="profileImg"></div>
+          <div class="profileDetail">
+            <span class="userName" id="userName"></span>
+
+            <span class="userBio" id="userBio"></span>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="userLocation" id="userLocation"></span>
+            </div>
+            <span class="userLink" id="userLink"></span>
+          </div>
+        </div>
+        <div class="userGithub">
+          <span class="fa-solid fa-link"></span>
+          <a id="userGithubLink" target="_blank" class="userGithubLink"> </a>
+        </div>
+      </div>
+      <div id="repositoriesContainer" class="reposmain"></div>
+      <div class="pagemaintab">
+        <div class="paginationMain">
+          <i
+            id="prevNavigateButton"
+            class="paginationArrow fa-solid fa-angles-left"
+          ></i>
+          <div id="paginationContainer" class="pagination"></div>
+          <i
+            id="nextNavigateButton"
+            class="paginationArrow fa-solid fa-angles-right"
+          ></i>
+        </div>
+        <div class="pagebuttonmain">
+          <button id="prevButton" class="pagebutton">
+            <span><i class="fa-solid fa-arrow-left"></i></span>Older
+          </button>
+          <button id="nextButton" class="pagebutton">
+            Newer <span><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

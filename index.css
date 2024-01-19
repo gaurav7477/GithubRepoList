@@ -1,0 +1,434 @@
+/* Apply basic styles to the repository container */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  margin-top: 10px;
+  flex-direction: column;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+
+/* Search container styles */
+.searchToggles {
+  width: 100%;
+  display: flex;
+  padding: 18px;
+  text-align: center;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.searchContainer {
+  display: none;
+  margin: 0 45px;
+  text-align: center;
+}
+#searchToggle {
+  background-color: #255677; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding-right: 10px;
+}
+
+.reposearchContainer {
+  margin-right: 12px;
+  display: none;
+}
+
+/* Style for the Font Awesome icon */
+#searchToggle i {
+  font-size: 20px; /* Adjust the icon size */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+
+/* Search input styles */
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+/* Search button styles */
+#searchButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #255677;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+#searchButton:hover {
+  background-color: #255677;
+}
+
+/* Search input styles */
+#searchRepoInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+/* Search button styles */
+#searchRepoButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #255677;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+#searchRepoButton:hover {
+  background-color: #255677;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.userGithub {
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+.userGithubLink {
+  text-decoration: none;
+}
+.profileInfo {
+  display: flex;
+}
+.profileImg {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileDetail {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+.profileImg img {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the image round */
+}
+
+.userName {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.userBio {
+  font-weight: 600;
+}
+
+.userLocation {
+}
+
+.userLink {
+}
+
+.reposmain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.repo-container {
+  border: 2px solid #8c8c8c;
+  padding: 8px;
+  width: 550px; /* 50% width with 15px gap */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  height: 150px;
+}
+
+/* Style the repository name */
+.repo-heading {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: rgb(0, 149, 255);
+}
+
+/* Style the repository description */
+.repo-description {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Style the list of languages */
+.repo-languages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Style each language item */
+.repo-language-item {
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.repo-list {
+  background: rgb(0, 149, 255);
+  padding: 5px 7px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.paginationMain {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 149, 255);
+}
+
+.pagemaintab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+  flex-direction: column;
+}
+.pagebuttonmain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.pagebutton {
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: rgb(0, 149, 255);
+  border: 2px solid rgb(0, 149, 255);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.pagebutton > span{
+  margin:0px 5px;
+}
+
+.pagebutton:hover,
+.pagebutton:focus {
+  background-color: rgb(0, 160, 255);
+  color: #fff; /* Change text color on hover/focus */
+  border-color: transparent; /* Optional: Hide border on hover/focus */
+}
+.pagination {
+  display: flex;
+}
+.page-link {
+  display: flex;
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 149, 255);
+  padding: 5px;
+  border-left: 1px solid rgb(0, 149, 255);
+  border-right: 1px solid rgb(0, 149, 255);
+  justify-content: center;
+}
+.paginationArrow {
+  color: rgb(0, 160, 255);
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.page-link :focus {
+  background: rgb(0, 200, 200);
+}
+
+.page-link:hover {
+  background: rgb(200, 200, 200);
+}
+
+.loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .repo-container {
+    width: 300px;
+  }
+
+  .profileImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile {
+    width: 350px;
+  }
+
+  .profileDetail {
+    padding-left: 10px;
+  }
+
+  #searchInput {
+    width: 200px;
+  }
+
+  #searchRepoInput {
+    width: 150px;
+  }
+
+  .repo-languages {
+    margin-top: 5px;
+  }
+}
+
+/* Media query for screens up to 1300px wide */
+@media only screen and (max-width: 1300px) {
+  .main {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .searchContainer,
+  .reposearchContainer {
+    right: 10px;
+  }
+
+  .repo-container {
+    width: 100%;
+  }
+}
+
+/* Media query for screens up to 768px wide */
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .profileDetail {
+    padding-left: 10px;
+  }
+
+  .repo-container {
+    width: calc(100% - 20px); /* Adjust the gap */
+  }
+
+  .searchContainer,
+  .reposearchContainer {
+    right: 0;
+    text-align: center;
+    position: static;
+    margin-top: 10px;
+  }
+
+  #searchInput,
+  #searchRepoInput {
+    width: 100%;
+  }
+}
+
+/* Media query for screens up to 576px wide */
+@media only screen and (max-width: 576px) {
+  .repo-container {
+    width: 100%;
+  }
+
+  .profileImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile {
+    width: calc(100% - 20px); /* Adjust the gap */
+  }
+
+  .profileDetail {
+    padding-left: 10px;
+  }
+
+  .searchContainer,
+  .reposearchContainer {
+    right: 0;
+    text-align: center;
+    position: static;
+    margin-top: 5px;
+  }
+
+  #searchInput,
+  #searchRepoInput {
+    width: 100%;
+  }
+
+  .repo-languages {
+    margin-top: 5px;
+  }
+}
